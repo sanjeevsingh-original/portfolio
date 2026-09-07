@@ -36,7 +36,7 @@ if (heroActions && !document.querySelector(".research-profiles")) {
   profiles.innerHTML = `
     <span>RESEARCH PROFILES</span>
     <a href="https://scholar.google.com/citations?user=5njnkWgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
-    <a href="https://orcid.org/0000-0000-6680-6531" target="_blank" rel="noopener">ORCID ↗</a>
+    <a href="https://orcid.org/0009-0000-6680-6531" target="_blank" rel="noopener">ORCID ↗</a>
     <a href="https://github.com/sanjeevsingh-original" target="_blank" rel="noopener">GitHub ↗</a>
   `;
   heroActions.insertAdjacentElement("afterend", profiles);
