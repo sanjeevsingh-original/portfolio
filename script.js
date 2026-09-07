@@ -42,6 +42,11 @@ if (heroActions && !document.querySelector(".research-profiles")) {
   heroActions.insertAdjacentElement("afterend", profiles);
 }
 
+const toolkitTheme = document.createElement("link");
+toolkitTheme.rel = "stylesheet";
+toolkitTheme.href = "toolkit-dark.css";
+document.head.appendChild(toolkitTheme);
+
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries, obs) => {
