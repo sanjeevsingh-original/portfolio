@@ -28,6 +28,20 @@ if (progress) {
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
 
+const heroActions = document.querySelector(".hero-actions");
+if (heroActions && !document.querySelector(".research-profiles")) {
+  const profiles = document.createElement("div");
+  profiles.className = "research-profiles";
+  profiles.setAttribute("aria-label", "Research profiles");
+  profiles.innerHTML = `
+    <span>RESEARCH PROFILES</span>
+    <a href="https://scholar.google.com/citations?user=5njnkWgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+    <a href="https://orcid.org/0000-0000-6680-6531" target="_blank" rel="noopener">ORCID ↗</a>
+    <a href="https://github.com/sanjeevsingh-original" target="_blank" rel="noopener">GitHub ↗</a>
+  `;
+  heroActions.insertAdjacentElement("afterend", profiles);
+}
+
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries, obs) => {
