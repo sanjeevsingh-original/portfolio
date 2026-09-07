@@ -47,6 +47,11 @@ toolkitTheme.rel = "stylesheet";
 toolkitTheme.href = "toolkit-dark.css";
 document.head.appendChild(toolkitTheme);
 
+const experienceEducationTheme = document.createElement("link");
+experienceEducationTheme.rel = "stylesheet";
+experienceEducationTheme.href = "experience-education.css";
+document.head.appendChild(experienceEducationTheme);
+
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries, obs) => {
